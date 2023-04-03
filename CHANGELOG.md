@@ -3,8 +3,9 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
-## [0.5.0]
+## [0.6.0]
 
+- Fixed package dependencies
 - Updated dependencies, including @antfu/eslint to 0.38.2
 
 ## [0.4.0]
