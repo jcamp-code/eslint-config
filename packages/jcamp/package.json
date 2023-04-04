@@ -19,7 +19,7 @@
     "typescript": ">=5.0.3"
   },
   "dependencies": {
-    "@antfu/eslint-config-vue": "^0.38.2",
+    "@antfu/eslint-config-vue": "^0.38.4",
     "eslint-config-prettier": "^8.8.0",
     "prettier-plugin-tailwindcss": "0.2.6"
   },
