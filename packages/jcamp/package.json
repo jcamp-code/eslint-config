@@ -1,6 +1,6 @@
 {
   "name": "@jcamp/eslint-config",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "description": "JohnCampionJr's ESLint config",
   "author": "John Campion (https://github.com/JohnCampionJr/)",
   "license": "MIT",
