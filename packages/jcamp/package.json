@@ -21,7 +21,7 @@
   "dependencies": {
     "@antfu/eslint-config-vue": "^0.38.4",
     "eslint-config-prettier": "^8.8.0",
-    "prettier-plugin-tailwindcss": "0.2.8"
+    "prettier-plugin-tailwindcss": "0.3.0"
   },
   "devDependencies": {
     "eslint": "^8.37.0",
