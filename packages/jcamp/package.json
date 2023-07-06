@@ -15,7 +15,7 @@
   ],
   "peerDependencies": {
     "eslint": ">=8.37.0",
-    "prettier": ">=2.8.8 < 3.0.0"
+    "prettier": ">=2.8.8 < 4.0.0"
   },
   "dependencies": {
     "@antfu/eslint-config-vue": "^0.39.7",
@@ -24,7 +24,7 @@
   },
   "devDependencies": {
     "eslint": "^8.44.0",
-    "prettier": "^2.8.8"
+    "prettier": "^3.0.0"
   }
 }
 
