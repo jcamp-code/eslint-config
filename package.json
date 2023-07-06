@@ -12,11 +12,10 @@
     "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^0.39.0",
-    "bumpp": "^9.1.0",
-    "eslint": "^8.37.0",
-    "eslint-plugin-antfu": "^0.39.0",
-    "typescript": "^5.0.3"
+    "@antfu/eslint-config": "^0.39.7",
+    "bumpp": "^9.1.1",
+    "eslint": "^8.44.0",
+    "typescript": "^5.1.6"
   },
   "pnpm": {
     "peerDependencyRules": {

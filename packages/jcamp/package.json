@@ -8,6 +8,7 @@
   "keywords": [
     "eslint-config"
   ],
+  "type": "module",
   "main": "index.js",
   "files": [
     "index.js",
@@ -15,17 +16,17 @@
   ],
   "peerDependencies": {
     "eslint": ">=8.37.0",
-    "prettier": ">=2.8.7",
+    "prettier": ">=3.0.0",
     "typescript": ">=5.0.3"
   },
   "dependencies": {
-    "@antfu/eslint-config-vue": "^0.39.0",
+    "@antfu/eslint-config-vue": "^0.39.7",
     "eslint-config-prettier": "^8.8.0",
     "prettier-plugin-tailwindcss": "0.3.0"
   },
   "devDependencies": {
-    "eslint": "^8.37.0",
-    "typescript": "^5.0.3",
-    "prettier": ">=2.8.7"
+    "eslint": "^8.44.0",
+    "typescript": "^5.1.6",
+    "prettier": "^3.0.0"
   }
 }

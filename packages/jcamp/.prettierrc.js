@@ -1,14 +1,15 @@
 // prettier.config.js
 // some of these match the current Prettier defaults, but are left in for clarity
+import tailwind from 'prettier-plugin-tailwindcss'
 
-module.exports = {
+export default {
   arrowParens: 'always',
   bracketSameLine: false,
   endOfLine: 'lf',
-  printWidth: 80,
+  printWidth: 100,
   singleQuote: true,
-  trailingComma: 'es5',
+  trailingComma: 'all',
   semi: false,
   singleAttributePerLine: false,
-  plugins: [require('prettier-plugin-tailwindcss')],
+  plugins: [tailwind],
 }

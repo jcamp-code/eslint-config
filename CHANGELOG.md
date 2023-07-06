@@ -3,6 +3,11 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.7.0]
+
+- Updated @antfu/eslint to 0.39.7
+- Updated prettier to 3.0.0
+
 ## [0.6.1]
 
 - Updated @antfu/eslint to 0.38.4
