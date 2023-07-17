@@ -4,7 +4,7 @@
   "description": "JohnCampionJr's ESLint config",
   "author": "John Campion (https://github.com/JohnCampionJr/)",
   "license": "MIT",
-  "homepage": "https://github.com/jcamp/eslint-config",
+  "homepage": "https://github.com/jcamp-code/eslint-config",
   "keywords": [
     "eslint-config",
     "prettier"
