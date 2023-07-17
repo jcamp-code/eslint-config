@@ -1,26 +1,34 @@
 {
-  "name": "@jcamp/eslint-config-monorepo",
-  "private": true,
-  "packageManager": "pnpm@8.6.7",
+  "name": "@jcamp/eslint-config",
+  "version": "0.8.0",
+  "description": "JohnCampionJr's ESLint config",
   "author": "John Campion (https://github.com/JohnCampionJr/)",
   "license": "MIT",
+  "homepage": "https://github.com/jcamp/eslint-config",
+  "keywords": [
+    "eslint-config",
+    "prettier"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js",
+    ".prettierrc.js"
+  ],
   "scripts": {
     "lint": "eslint .",
-    "format": "prettier . --check",
-    "release": "bumpp package.json packages/*/package.json --commit --push --tag && pnpm -r publish --access public"
+    "format": "prettier . --check"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.45.0",
+    "prettier": ">=3.0.0"
+  },
+  "dependencies": {
+    "@antfu/eslint-config-vue": "^0.39.8",
+    "eslint-config-prettier": "^8.8.0",
+    "prettier-plugin-tailwindcss": "^0.4.1"
   },
   "devDependencies": {
-    "@jcamp/eslint-config": "workspace:*",
-    "bumpp": "^9.1.1",
     "eslint": "^8.45.0",
-    "typescript": "^5.1.6"
-  },
-  "pnpm": {
-    "peerDependencyRules": {
-      "ignoreMissing": [
-        "webpack",
-        "vue"
-      ]
-    }
+    "prettier": "^3.0.0"
   }
 }

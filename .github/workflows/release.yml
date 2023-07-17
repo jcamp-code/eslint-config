@@ -31,7 +31,6 @@ jobs:
           plugins: sentence-case
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
-          path: ./packages/jcamp
           changelog-types: >
             [
               { "type": "feat", "section": "✨ Features" },
@@ -54,6 +53,6 @@ jobs:
         if: ${{ steps.release.outputs.release_created }}
         run: |
           pnpm install
-          pnpm -r publish --access public
+          pnpm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
