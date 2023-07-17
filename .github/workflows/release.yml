@@ -1,0 +1,57 @@
+on:
+  push:
+    branches:
+      - main
+name: release
+jobs:
+  release:
+    name: release-please-plus
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to be able to publish a GitHub release
+      issues: write # to be able to comment on released issues
+      pull-requests: write # to be able to comment on released pull requests
+    steps:
+      - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 8
+      - uses: actions/setup-node@v3
+        with:
+          registry-url: 'https://registry.npmjs.org'
+          node-version: 18
+          cache: pnpm
+      # Now that we know the build runs, create a release PR if needed.
+      - uses: release-please-plus/action@main
+        id: release
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          # command: manifest
+          # bootstrap-sha: 6ff71bc6933cad82b14ea9e363a3b51eb39fd857
+          release-type: node
+          plugins: sentence-case
+          changelog-types: >
+            [
+              { "type": "feat", "section": "✨ Features" },
+              { "type": "feature", "section": "✨ Features" },
+              { "type": "perf", "section": "⚡️Performance Improvements" },
+              { "type": "fix", "section": "🐛 Bug Fixes" },
+              { "type": "revert", "section": "⏪️ Reverts" },
+              { "type": "docs", "section": "📝 Documentation" },
+              { "type": "style", "section": "🎨 Styles" },
+              { "type": "chore", "section": "🏡 Miscellaneous Chores" },
+              { "type": "refactor", "section": "♻️ Code Refactoring", "hidden": true },
+              { "type": "test", "section": "✅ Tests", "hidden": true },
+              { "type": "build", "section": "📦️ Build System", "hidden": true },
+              { "type": "ci", "section": "🤖 Continuous Integration", "hidden": true }
+            ]
+          extra-files: |
+            { "type": "xml", "path": "src/Test.csproj", "xpath": "//project/propertygroup/version" }
+            { "type": "xml", "path": "src/Directory.Build.props", "xpath": "//project/propertygroup/version" }
+      - name: Publish to NPM
+        if: ${{ steps.release.outputs.release_created }}
+        run: |
+          pnpm install
+          pnpm -r publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

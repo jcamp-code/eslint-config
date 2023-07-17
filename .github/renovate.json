@@ -1,11 +1,7 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": ["config:base", "group:allNonMajor", ":semanticCommitTypeAll(chore)"],
-  "ignorePaths": [
-    "**/node_modules/**",
-    "**/bower_components/**",
-    "**/fixtures/**"
-  ],
+  "ignorePaths": ["**/node_modules/**", "**/bower_components/**", "**/fixtures/**"],
   "meteor": {
     "enabled": false
   },
