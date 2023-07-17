@@ -31,6 +31,7 @@ jobs:
           plugins: sentence-case
           bump-minor-pre-major: true
           bump-patch-for-minor-pre-major: true
+          path: ./packages/jcamp
           changelog-types: >
             [
               { "type": "feat", "section": "✨ Features" },
