@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.8.0](https://github.com/jcamp-code/eslint-config/compare/v0.7.2...v0.8.0) (2023-07-17)
+
+
+### ⚠ BREAKING CHANGES
+
+* move to prettier v3 ([#17](https://github.com/jcamp-code/eslint-config/issues/17))
+
+### ✨ Features
+
+* Move to prettier v3 ([#17](https://github.com/jcamp-code/eslint-config/issues/17)) ([a27980b](https://github.com/jcamp-code/eslint-config/commit/a27980b847131f393108ca8d710415a2ea4756eb))
+
 ## [0.7.1]
 
 - Revert prettier to 2.8.8 - tailwind plugin needs to be updated first. [Issue](https://github.com/tailwindlabs/prettier-plugin-tailwindcss/issues/176)
