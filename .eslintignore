@@ -2,4 +2,5 @@ dist
 pnpm-lock.yaml
 cache
 temp
-CHANGELOG.md
+fixtures
+.github

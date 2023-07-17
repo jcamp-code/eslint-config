@@ -6,7 +6,8 @@
   "license": "MIT",
   "homepage": "https://github.com/jcamp/eslint-config",
   "keywords": [
-    "eslint-config"
+    "eslint-config",
+    "prettier"
   ],
   "main": "index.js",
   "files": [
@@ -15,7 +16,7 @@
   ],
   "peerDependencies": {
     "eslint": ">=8.45.0",
-    "prettier": ">=2.8.8 < 4.0.0"
+    "prettier": ">=3.0.0"
   },
   "dependencies": {
     "@antfu/eslint-config-vue": "^0.39.8",
