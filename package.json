@@ -14,10 +14,14 @@
     "index.js",
     ".prettierrc.js"
   ],
-  "scripts": {
-    "lint": "eslint .",
-    "format": "prettier . --check"
-  },
+  {
+    "scripts": {
+      "lint": "eslint .",
+      "fix": "eslint . --fix",
+      "format": "prettier . --check",
+      "clean": "prettier . --write"
+    }
+  },  
   "peerDependencies": {
     "eslint": ">=8.45.0",
     "prettier": ">=3.0.0"
