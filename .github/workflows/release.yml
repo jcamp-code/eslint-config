@@ -20,7 +20,6 @@ jobs:
         with:
           registry-url: 'https://registry.npmjs.org'
           node-version: 18
-          cache: pnpm
       # Now that we know the build runs, create a release PR if needed.
       - uses: release-please-plus/action@main
         id: release
@@ -30,6 +29,8 @@ jobs:
           # bootstrap-sha: 6ff71bc6933cad82b14ea9e363a3b51eb39fd857
           release-type: node
           plugins: sentence-case
+          bump-minor-pre-major: true
+          bump-patch-for-minor-pre-major: true
           changelog-types: >
             [
               { "type": "feat", "section": "✨ Features" },
