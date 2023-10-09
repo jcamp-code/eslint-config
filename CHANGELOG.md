@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/jcamp-code/eslint-config/compare/v1.0.2...v1.0.3) (2023-10-09)
+
+
+### 🐛 Bug Fixes
+
+* Disable eslint/sort-imports ([331bd04](https://github.com/jcamp-code/eslint-config/commit/331bd04c28d1208f8f651a7262830a97444eb966))
+
 ## [1.0.2](https://github.com/jcamp-code/eslint-config/compare/v1.0.1...v1.0.2) (2023-10-09)
 
 
