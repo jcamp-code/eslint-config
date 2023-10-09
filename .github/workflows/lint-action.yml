@@ -34,9 +34,10 @@ jobs:
       - name: Install dependencies
         run: pnpm install
       - name: Run linters
-        uses: wearerequired/lint-action@v2
+        uses: jcamp-code/lint-action@latest
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           eslint: true
+          eslint_extensions: ''
           prettier: true
           dotnet_format: false
