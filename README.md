@@ -16,6 +16,8 @@ It starts with his vue config and makes these changes:
 
 ## Usage
 
+Note v1.0.0-beta is a breaking change, requires adjusting your setup.
+
 ### Install
 
 ```bash
