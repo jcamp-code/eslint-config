@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.1](https://github.com/jcamp-code/eslint-config/compare/v1.0.0...v1.0.1) (2023-10-09)
+
+
+### 🐛 Bug Fixes
+
+* Add separator between 3rd party and local modules ([64a77d0](https://github.com/jcamp-code/eslint-config/commit/64a77d059d6e716089a802dfbdf273e782b381ce))
+
 ## [1.0.0](https://github.com/jcamp-code/eslint-config/compare/v0.8.2...v1.0.0) (2023-10-09)
 
 
