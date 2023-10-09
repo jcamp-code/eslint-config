@@ -9,7 +9,7 @@ config.push(eslintConfigPrettier)
 
 config.push({
   rules: {
-    curly: ['error', 'all'],
+    curly: ['error', 'multi', 'consistent'],
     'vue/html-self-closing': [
       'error',
       {
