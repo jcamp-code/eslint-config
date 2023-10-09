@@ -18,6 +18,8 @@ It starts with his vue config and makes these changes:
 
 Note v1.0.0-beta is a breaking change, requires adjusting your setup.
 
+For more eslint config details, see [@antfu/eslint-config]()
+
 ### Install
 
 ```bash
@@ -77,7 +79,7 @@ Create `.vscode/settings.json`
   // Enable the ESlint flat config support
   "eslint.experimental.useFlatConfig": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
+    "source.fixAll": "explicit",
     "source.organizeImports": "never"
   }
 }
