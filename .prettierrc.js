@@ -13,6 +13,7 @@ export default {
   importOrder: [
     '<BUILT_IN_MODULES>',
     '<THIRD_PARTY_MODULES>',
+    '',
     '^(?!.*[.]css$)[./].*$',
     '',
     '.css$',
