@@ -38,6 +38,5 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           eslint: true
-          eslint_extensions: js,ts
           prettier: true
           dotnet_format: false
