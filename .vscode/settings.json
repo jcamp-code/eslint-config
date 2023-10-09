@@ -1,0 +1,3 @@
+{  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
+}

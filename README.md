@@ -22,22 +22,28 @@ It starts with his vue config and makes these changes:
 pnpm add -D eslint prettier @jcamp/eslint-config
 ```
 
-### Config `.eslintrc`
+### Config `eslint.config.js`
 
-```json
-{
-  "extends": "@jcamp"
-}
+```js
+import config from '@jcamp/eslint-config'
+
+export default config
 ```
 
-> You don't need `.eslintignore` normally as it has been provided by the preset.
+> `.eslintignore` is no longer supported by [eslint flatconfig](https://eslint.org/docs/latest/use/configure/configuration-files-new#globally-ignoring-files-with-ignores).
+
+```js
+config.push({
+  ignores: ['temp.js', '**/vendor/*.js'],
+})
+```
 
 ### Config `.prettierrc.js`
 
 ```js
-const baseConfig = require('@jcamp/eslint-config/.prettierrc.js')
+import baseConfig from '@jcamp/eslint-config/prettier'
 
-module.exports = {
+export default {
   ...baseConfig,
   /* make any changes here */
   singleAttributePerLine: false,
@@ -66,12 +72,15 @@ Create `.vscode/settings.json`
 ```json
 {
   "prettier.enable": true,
+  // Enable the ESlint flat config support
+  "eslint.experimental.useFlatConfig": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit",
+    "source.organizeImports": "never"
   }
 }
 ```
 
 ## License
 
-[MIT](./LICENSE) License &copy; 2022-PRESENT [John Campion](https://github.com/JohnCampionJr/)
+[MIT](./LICENSE) License &copy; 2023-PRESENT [John Campion](https://github.com/JohnCampionJr/)

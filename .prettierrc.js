@@ -1,6 +1,4 @@
-// prettier.config.js
-// some of these match the current Prettier defaults, but are left in for clarity
-module.exports = {
+export default {
   arrowParens: 'always',
   bracketSameLine: false,
   endOfLine: 'lf',
@@ -9,5 +7,14 @@ module.exports = {
   trailingComma: 'all',
   semi: false,
   singleAttributePerLine: false,
-  plugins: ['prettier-plugin-tailwindcss'],
+  plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
+  tailwindFunctions: ['clsx'],
+  importOrderTypeScriptVersion: '5.0.0',
+  importOrder: [
+    '<BUILT_IN_MODULES>',
+    '<THIRD_PARTY_MODULES>',
+    '^(?!.*[.]css$)[./].*$',
+    '',
+    '.css$',
+  ],
 }
