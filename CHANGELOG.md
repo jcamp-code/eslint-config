@@ -3,6 +3,24 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.0](https://github.com/jcamp-code/eslint-config/compare/v0.8.2...v1.0.0) (2023-10-09)
+
+
+### ⚠ BREAKING CHANGES
+
+* update to eslint flat config
+
+### ✨ Features
+
+* Add @IanVS/prettier-plugin-sort-imports ([cd16e8f](https://github.com/jcamp-code/eslint-config/commit/cd16e8f4857d19ee23a511142935993738c72845))
+* Update to eslint flat config ([cd16e8f](https://github.com/jcamp-code/eslint-config/commit/cd16e8f4857d19ee23a511142935993738c72845))
+* Updated to latest versions ([87358bb](https://github.com/jcamp-code/eslint-config/commit/87358bb7c307ce8f674ab38582b4ea9f7a378e39))
+
+
+### 🏡 Miscellaneous Chores
+
+* Release 1.0.0 ([958df7b](https://github.com/jcamp-code/eslint-config/commit/958df7b90a8717c1835cce49ed80b24acd5a850e))
+
 ## [0.8.2](https://github.com/jcamp-code/eslint-config/compare/v0.8.1...v0.8.2) (2023-07-17)
 
 
