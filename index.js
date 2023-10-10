@@ -27,4 +27,11 @@ config.push({
   },
 })
 
+// existing ignores
+// https://github.com/antfu/eslint-config/blob/main/src/globs.ts
+
+config.push({
+  ignores: ['.pnpm-store'],
+})
+
 export default config
