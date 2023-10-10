@@ -4,3 +4,5 @@ cache
 temp
 CHANGELOG.md
 fixtures
+node_modules
+.pnpm-store
