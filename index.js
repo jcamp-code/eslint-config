@@ -11,6 +11,7 @@ config.push({
   rules: {
     // this doesn't like the ordering of types at the end of the imports
     'sort-imports': ['off'],
+    'import/order': ['off'],
 
     // Prettier can handle this setting, see https://eslint.org/docs/latest/rules/curly#consistent
     curly: ['error', 'multi', 'consistent'],
