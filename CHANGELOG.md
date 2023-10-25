@@ -3,6 +3,13 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.4](https://github.com/jcamp-code/eslint-config/compare/v1.0.3...v1.0.4) (2023-10-22)
+
+
+### 🐛 Bug Fixes
+
+* Add new rule ignore for import order ([17d5cc6](https://github.com/jcamp-code/eslint-config/commit/17d5cc6824f7f44b32d23169140c7d52654ba2bf))
+
 ## [1.0.3](https://github.com/jcamp-code/eslint-config/compare/v1.0.2...v1.0.3) (2023-10-09)
 
 
