@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/jcamp-code/eslint-config/compare/v1.0.4...v2.0.0) (2024-06-01)
+
+### BREAKING CHANGES ###
+
+Updated to eslint 9.x, @antfu/eslint-config 2.0
+
+Uses new eslint flat config setup from antfu, as such, the setup is changed.
+
 ## [1.0.4](https://github.com/jcamp-code/eslint-config/compare/v1.0.3...v1.0.4) (2023-10-22)
 
 

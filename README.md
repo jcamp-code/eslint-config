@@ -16,7 +16,7 @@ It starts with his vue config and makes these changes:
 
 ## Usage
 
-Note v1.0.0-beta is a breaking change, requires adjusting your setup.
+Note v2.0.0 is a breaking change, requires adjusting your setup.
 
 For more eslint config details, see [@antfu/eslint-config]()
 
@@ -29,26 +29,29 @@ pnpm add -D eslint prettier @jcamp/eslint-config
 ### Config `eslint.config.js`
 
 ```js
-import config from '@jcamp/eslint-config'
+import { jcamp } from '@jcamp/eslint-config'
 
-export default config
+export default jcamp(
+  // antfu options
+  {},
+  // additional rules to add
+  {},
+  // ignores
+  {
+    ignores: ['temp.js', '**/vendor/*.js'],
+  }
+)
 ```
 
 > `.eslintignore` is no longer supported by [eslint flatconfig](https://eslint.org/docs/latest/use/configure/configuration-files-new#globally-ignoring-files-with-ignores).
 
-```js
-config.push({
-  ignores: ['temp.js', '**/vendor/*.js'],
-})
-```
-
 ### Config `.prettierrc.js`
 
 ```js
-import baseConfig from '@jcamp/eslint-config/prettier'
+import { jcPrettier } from '@jcamp/eslint-config'
 
 export default {
-  ...baseConfig,
+  ...jcPrettier,
   /* make any changes here */
   singleAttributePerLine: false,
 }

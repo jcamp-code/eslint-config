@@ -1,7 +1,10 @@
-import config from './index.js'
+import { jcamp } from './index.js'
 
-config.push({
-  ignores: ['fixtures'],
-})
+const config = jcamp(
+  {},
+  {
+    ignores: ['fixtures'],
+  }
+)
 
 export default config
