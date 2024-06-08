@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [2.0.0](https://github.com/jcamp-code/eslint-config/compare/v2.0.0...v2.1.0) (2024-06-01)
+
+- Changed Prettier Tailwind plugins to ESLint based plugin
+- Changed Prettier Import sorting to an ESLint based plugin
+- Added Prettier plugin for long class name line breaks for Tailwind
+
+Uses new eslint flat config setup from antfu, as such, the setup is changed.
+
 ## [2.0.0](https://github.com/jcamp-code/eslint-config/compare/v1.0.4...v2.0.0) (2024-06-01)
 
 ### BREAKING CHANGES ###

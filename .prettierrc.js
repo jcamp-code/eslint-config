@@ -7,15 +7,6 @@ export default {
   trailingComma: 'all',
   semi: false,
   singleAttributePerLine: false,
-  plugins: ['@ianvs/prettier-plugin-sort-imports', 'prettier-plugin-tailwindcss'],
-  tailwindFunctions: ['clsx'],
-  importOrderTypeScriptVersion: '5.0.0',
-  importOrder: [
-    '<BUILT_IN_MODULES>',
-    '<THIRD_PARTY_MODULES>',
-    '',
-    '^(?!.*[.]css$)[./].*$',
-    '',
-    '.css$',
-  ],
+  plugins: ['prettier-plugin-classnames'],
+  endingPosition: 'absolute-with-indent',
 }

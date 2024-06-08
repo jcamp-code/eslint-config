@@ -1,7 +1,7 @@
 {
   "name": "@jcamp/eslint-config",
   "type": "module",
-  "version": "2.0.2",
+  "version": "2.1.0",
   "description": "JohnCampionJr's ESLint config",
   "author": "John Campion (https://github.com/JohnCampionJr/)",
   "license": "MIT",
@@ -26,17 +26,26 @@
     "clean": "prettier . --write"
   },
   "peerDependencies": {
+    "@antfu/eslint-config": ">=2.20.0",
     "eslint": ">=8.0.0",
     "prettier": ">=3.0.3"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.19.2",
-    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "eslint-config-prettier": "^9.1.0",
-    "prettier-plugin-tailwindcss": "^0.6.1"
+    "eslint-plugin-tailwindcss": "^3.17.3",
+    "prettier-plugin-classnames": "^0.6.6"
   },
   "devDependencies": {
+    "@antfu/eslint-config": "^2.20.2",
     "eslint": "^9.4.0",
-    "prettier": "^3.3.0"
+    "prettier": "^3.3.1"
+  },
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [],
+      "allowedVersions": {
+        "eslint": "9"
+      }
+    }
   }
 }
