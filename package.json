@@ -26,19 +26,19 @@
     "clean": "prettier . --write"
   },
   "peerDependencies": {
-    "@antfu/eslint-config": ">=2.20.0",
-    "eslint": ">=8.0.0",
-    "prettier": ">=3.0.3"
+    "@antfu/eslint-config": ">=2.21.2",
+    "eslint": ">=8.57.0",
+    "prettier": ">=3.3.2"
   },
   "dependencies": {
     "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-tailwindcss": "^3.17.3",
-    "prettier-plugin-classnames": "^0.6.6"
+    "eslint-plugin-tailwindcss": "^3.17.4",
+    "prettier-plugin-classnames": "^0.7.0"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^2.20.2",
-    "eslint": "^9.4.0",
-    "prettier": "^3.3.1"
+    "@antfu/eslint-config": "^2.21.2",
+    "eslint": "^9.6.0",
+    "prettier": "^3.3.2"
   },
   "pnpm": {
     "peerDependencyRules": {
