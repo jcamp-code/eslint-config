@@ -27,7 +27,7 @@
   },
   "peerDependencies": {
     "@antfu/eslint-config": ">=2.21.2",
-    "eslint": ">=8.57.0",
+    "eslint": ">=9.9.0",
     "prettier": ">=3.3.2"
   },
   "dependencies": {
