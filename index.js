@@ -1,7 +1,6 @@
 import { antfu } from '@antfu/eslint-config'
-import eslintConfigPrettier from 'eslint-config-prettier'
-import perfectionistNatural from 'eslint-plugin-perfectionist/configs/recommended-natural'
-import tailwind from 'eslint-plugin-tailwindcss'
+import eslintPluginBetterTailwindcss from 'eslint-plugin-better-tailwindcss'
+import eslintPluginPrettier from 'eslint-plugin-prettier/recommended'
 
 import prettier from './.prettierrc.js'
 
@@ -10,48 +9,47 @@ function jcamp(options, ...configs) {
     // @antfu/eslint-config options, must be the first argument
     {
       stylistic: false,
-      vue: true,
+      imports: {
+        overrides: {
+          'perfectionist/sort-imports': [
+            'error',
+            {
+              newlinesBetween: 1,
+            },
+          ],
+        },
+      },
       ...options,
     },
-    eslintConfigPrettier,
-    ...tailwind.configs['flat/recommended'],
     {
-      name: 'jcamp/perfectionist',
-      rules: {
-        'import/order': 'off', // handled by perfectionist
-        'sort-imports': 'off', // handled by perfectionist
-        'perfectionist/sort-imports': perfectionistNatural.rules['perfectionist/sort-imports'],
-        'perfectionist/sort-exports': perfectionistNatural.rules['perfectionist/sort-exports'],
-        'perfectionist/sort-named-imports':
-          perfectionistNatural.rules['perfectionist/sort-named-imports'],
-        'perfectionist/sort-named-exports':
-          perfectionistNatural.rules['perfectionist/sort-named-exports'],
+      plugins: {
+        'better-tailwindcss': eslintPluginBetterTailwindcss,
       },
-    },
-    {
-      name: 'jcamp/prettier-compatibility',
       rules: {
-        // Prettier can handle this setting, see https://eslint.org/docs/latest/rules/curly#consistent
-        'curly': ['error', 'multi', 'consistent'],
-
-        // required config for Prettier https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/html-self-closing.md
-        'vue/html-self-closing': [
-          'error',
-          {
-            html: {
-              void: 'any',
-            },
-          },
+        ...eslintPluginBetterTailwindcss.configs.recommended.rules,
+        // or configure rules individually
+        'better-tailwindcss/enforce-consistent-line-wrapping': [
+          'off',
+          { printWidth: 100, preferSingleLine: true, group: 'never' },
         ],
+        //'better-tailwindcss/no-unregistered-classes': ['off', { ignore: [''], detectComponentClasses: true }],
+      },
+      settings: {
+        'better-tailwindcss': {
+          // tailwindcss 4: the path to the entry file of the css based tailwind config (eg: `src/global.css`)
+          entryPoint: 'app/assets/css/tailwind.css',
+        },
       },
     },
+    eslintPluginPrettier,
     {
       name: 'jcamp/overrides',
       rules: {
-        'tailwindcss/no-custom-classname': 'off',
+        // Prettier can handle this setting, see https://eslint.org/docs/latest/rules/curly#consistent
+        curly: ['error', 'multi', 'consistent'],
+        'better-tailwindcss/no-custom-classname': 'off',
       },
     },
-
     // Addtionals flat configs start from here
     ...configs,
   )

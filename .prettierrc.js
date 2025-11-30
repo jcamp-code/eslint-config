@@ -4,9 +4,11 @@ export default {
   endOfLine: 'lf',
   printWidth: 100,
   singleQuote: true,
-  trailingComma: 'all',
   semi: false,
   singleAttributePerLine: false,
-  plugins: ['prettier-plugin-classnames'],
+  trailingComma: 'all',
+  // until this plugin is updated to support Prettier v3.7
+  plugins: ['./prettier.classnames.cjs'],
+  // plugins: ['prettier-plugin-classnames'],
   endingPosition: 'absolute-with-indent',
 }
