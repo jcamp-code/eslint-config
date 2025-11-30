@@ -1,5 +1,7 @@
 # @jcamp/eslint-config
 
+**_NOTE: No longer updating package - decided I didn't like obfuscating settings in each project. I'm keeping this here so I can literally remind myself of my preferred settings_**
+
 This is my personal ESLint Config.
 
 It extends [@antfu](https://github.com/antfu)'s [eslint-config](https://github.com/antfu/eslint-config).
@@ -39,7 +41,7 @@ export default jcamp(
   // ignores
   {
     ignores: ['temp.js', '**/vendor/*.js'],
-  }
+  },
 )
 ```
 
