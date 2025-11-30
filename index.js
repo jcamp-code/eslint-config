@@ -42,14 +42,6 @@ function jcamp(options, ...configs) {
       },
     },
     eslintPluginPrettier,
-    {
-      name: 'jcamp/overrides',
-      rules: {
-        // Prettier can handle this setting, see https://eslint.org/docs/latest/rules/curly#consistent
-        curly: ['error', 'multi', 'consistent'],
-        'better-tailwindcss/no-custom-classname': 'off',
-      },
-    },
     // Addtionals flat configs start from here
     ...configs,
   )

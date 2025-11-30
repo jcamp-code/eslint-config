@@ -10,5 +10,4 @@ export default {
   // until this plugin is updated to support Prettier v3.7
   plugins: ['./prettier.classnames.cjs'],
   // plugins: ['prettier-plugin-classnames'],
-  endingPosition: 'absolute-with-indent',
 }
